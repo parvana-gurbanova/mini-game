@@ -18,15 +18,20 @@ body {
     padding:20px;
     border-radius: 12px;
 }
+#point, #timer {
+    color:#D2691E;
+    font-size: 24px;
+    line-height: 26px;
+}
 .green-area{
     width: 100%;
     height: 60px;
     background-color: #5a9e3a;
-    margin-top: 40vh;
+    margin-top: 15vh;
 }
 .ground{
     width: 100%;
-    height: calc(50vh - 60px);
+    height: calc(70vh - 60px);
     background-color: #A0522D;
     position: relative;
     display: flex;
@@ -34,11 +39,26 @@ body {
     justify-content: space-around;
     padding: 20px;
 }
-
+.grid {
+    width: 50%;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:30px;
+}
 .hole {
-    width: 60px;
-    height: 60px;
+    width: 130px;
+    height: 130px;
     background-color: #3E2212;
     border-radius: 50%;
-    position: absolute;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hole img {
+    width: 100px;
+    height: 100px;
 }
